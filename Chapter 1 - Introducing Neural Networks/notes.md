@@ -1,12 +1,46 @@
 # Chapter 1 Notes:
 
 ## Important terms
+
 ### Supervised Machine Learning
-- *"Supervised Machine Learning"* is used when you have pre-established and labeled data that can be used for training.
-- Data used for training is called a *"Feature"*.
-- A group of Features makes up a *"Feature Set"* (represented as vectors/arrays).
-- Values of a Feature Set can be referred to as a *"Sample"*.
-- *"Classifications"* or *"Labels"* are the *targets* that the network will assign output values to (e.g. "Dog" and "Cat", "Success" and "Failure", etc.)
+- **Definition:** *Supervised Machine Learning* is employed when there is existing labeled data for training purposes.
+- **Key Concepts:**
+  - **Feature:** An individual attribute or characteristic in the data.
+  - **Feature Set:** A group of features, typically represented as vectors or arrays.
+  - **Sample:** A specific instance or data point characterized by its feature values.
+  - **Target (or Label):** The output assigned to each sample, representing the desired prediction (e.g., "Dog" and "Cat," "Success" and "Failure").
+- **Training Data:** The labeled dataset used for teaching the model to associate features with corresponding targets.
+- **Objective:** To enable the model to make accurate predictions on new, unseen data by learning patterns from the labeled examples.
+
+### Unsupervised Machine Learning
+- **Definition:** *Unsupervised Machine Learning* deals with data that lacks pre-established labels. Instead of predicting outcomes, the algorithm identifies patterns or structures within the data.
+- **Components:**
+  - **Data Representation:** Unlabeled data is used to discover inherent structures or relationships.
+  - **Tasks:** Common tasks include clustering similar data points or reducing dimensionality.
+  
+### Semi-Supervised Machine Learning
+- **Definition:** *Semi-Supervised Learning* combines supervised and unsupervised elements, utilizing a small amount of labeled data and a larger pool of unlabeled data.
+- **Benefits:**
+  - **Cost-Effectiveness:** Useful when obtaining labeled data is resource-intensive.
+  - **Model Training:** The model is trained on the labeled subset and extends its knowledge to make predictions on unlabeled data.
+  
+### Reinforcement Learning
+- **Definition:** *Reinforcement Learning* involves an agent interacting with an environment, receiving feedback in the form of rewards or penalties based on its actions.
+- **Objective:**
+  - **Optimal Actions:** The agent aims to learn the sequence of actions that maximizes cumulative rewards.
+  - **Applications:** Commonly used in game playing, robotics, and autonomous systems.
+
+### Self-Supervised Learning
+- **Definition:** *Self-Supervised Learning* is a form of unsupervised learning where the model generates its labels without human annotation.
+- **Approach:**
+  - **Pretext Tasks:** Involves creating tasks that don't require external labels but guide the model in learning meaningful representations.
+  - **Examples:** Contrastive learning, predicting missing parts of the input.
+
+### Transfer Learning
+- **Definition:** *Transfer Learning* involves training a model on one task and applying the learned knowledge to a related but different task.
+- **Advantages:**
+  - **Resource Efficiency:** Efficient use of computational resources, especially with limited labeled data for the target task.
+  - **Types:** Feature-based transfer, instance-based transfer, and fine-tuning are common approaches.
 
 ## About Neural Networks
 A single neuron by itself is relatively useless, but, when combined with hundreds or thousands (or many more) of other neurons, the interconnectivity produces relationships and results that frequently outperform any other machine learning methods.
